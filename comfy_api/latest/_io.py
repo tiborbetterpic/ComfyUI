@@ -153,7 +153,7 @@ class Input(_IO_V3):
     '''
     Base class for a V3 Input.
     '''
-    def __init__(self, id: str, display_name: str=None, optional=True, tooltip: str=None, lazy: bool=None, extra_dict=None, raw_link: bool=None, advanced: bool=None):
+    def __init__(self, id: str, display_name: str=None, optional=False, tooltip: str=None, lazy: bool=None, extra_dict=None, raw_link: bool=None, advanced: bool=None):
         super().__init__()
         self.id = id
         self.display_name = display_name
